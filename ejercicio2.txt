@@ -1,0 +1,4 @@
+¿Cómo presenta el navegador el documento XML? ¿Muestra la tabla HTML o muestra el árbol XML? ¿Por qué?
+El Navegador Muestra un Arbol de Elementos.
+XMl considera un elemnto siempre que se tenga una etiqueta de apertura  y de cierre.
+

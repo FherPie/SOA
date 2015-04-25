@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"
+      encoding="utf-8"?>
+<table>
+  <thead>
+    <th>
+      <td>Nombres</td>
+      <td>C.I.</td>
+      <td>Direccion</td>
+      <td>Cargo</td>
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Andres Piedra</td>
+      <td>1722714795</td>
+      <td>Conocoto</td>
+      <td>Programador</td>
+     </tr>
+  </tbody>
+</table>

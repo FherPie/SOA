@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogo>
+  <planta>
+    <tipo>Planta1</tipo>
+    <nombre>Lechuga</nombre>
+    <precio>0.50</precio>
+    <procedencia>Quito</procedencia>
+  </planta>
+  <planta>
+    <tipo>Planta2</tipo>
+    <nombre>Cebolla</nombre>>
+    <precio>0.25</precio>
+    <procedencia>Riobamba</procedencia>
+  </planta>
+  <planta>
+    <tipo>Planta3</tipo>
+    <nombre>Frutilla</nombre>>
+    <precio>0.50</precio>
+    <procedencia>Quito</procedencia>
+  </planta>
+</catalogo>
