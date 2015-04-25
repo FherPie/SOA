@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="menu.css"?>
+<menu>
+  <lunes>
+    <entrada>Sopa de Esparragos</entrada>
+    <segundo>Carne Apanada</segundo>
+    <jugo>Jugo de Lima</jugo>
+    <postres>Helado</postres>
+  </lunes>
+  <Martes>
+    <entrada>Sopa de Avena</entrada>
+    <segundo>Higado Frito</segundo>
+    <jugo>Jugo de Mango</jugo>
+    <postres>Gelatina</postres>
+  </Martes>
+  <Miercoles>
+    <entrada>Sopa de Lenteja</entrada>
+    <segundo>Chuleta de Cerdo </segundo>
+    <jugo>Jugo de Naranja</jugo>
+    <postres>PLatanos con Jalea de Chocolate</postres>
+  </Miercoles>
+  
+</menu>

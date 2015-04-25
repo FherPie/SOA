@@ -1,0 +1,25 @@
+﻿body
+{
+
+}
+entrada {
+    color:blue;
+    font-size:14px;
+    text-decoration:underline;
+    display:block;
+}
+
+segundo {
+    color:red;
+    font-size:12px;
+}
+
+jugo {
+    color:green;
+    font-size:13px;
+}
+
+postres {
+    color:brown;
+    font-size:12px;
+}
