@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE menu [
+  <!ENTITY nombre "Nombre: Andres Piedra">
+  <!ENTITY materia "Catedra: Aquitectura Oientada a Servicios">
+  <!ENTITY establecimiento "Establecimiento: EPN">
+]>
+<menu>
+  <lunes>
+    <entrada>Sopa de Esparragos</entrada>
+    <segundo>Carne Apanada</segundo>
+    <jugo>Jugo de Lima</jugo>
+    <postres>Helado</postres>
+    <reservapara>&nombre;&materia;&establecimiento;</reservapara>
+  </lunes>
+  <Martes>
+    <entrada>Sopa de Avena</entrada>
+    <segundo>Higado Frito</segundo>
+    <jugo>Jugo de Mango</jugo>
+    <postres>Gelatina</postres>
+  </Martes>
+  <Miercoles>
+    <entrada>Sopa de Lenteja</entrada>
+    <segundo>Chuleta de Cerdo </segundo>
+    <jugo>Jugo de Naranja</jugo>
+    <postres>PLatanos con Jalea de Chocolate</postres>
+  </Miercoles>
+</menu>

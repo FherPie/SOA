@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE catalogo [
+
+  <!ENTITY planta "Origen: Extaida  ">
+  <!ENTITY ornamental "Ornamental: Si">
+  <!ENTITY nornamental "Ornamental: No">
+]>
+
+<catalogo>
+  <planta>
+    <tipo>Planta1</tipo>
+    <nombre>Lechuga</nombre>
+    <precio>0.50</precio>
+    <procedencia>Quito</procedencia>
+    <caracteristicas>&planta;&nornamental;</caracteristicas>
+  </planta>
+  <planta>
+    <tipo>Planta2</tipo>
+    <nombre>Cebolla</nombre>>
+    <precio>0.25</precio>
+    <procedencia>Riobamba</procedencia>
+    <caracteristicas>&planta;&nornamental;</caracteristicas>
+  </planta>
+  <planta>
+    <tipo>Planta3</tipo>
+    <nombre>Frutilla</nombre>>
+    <precio>0.50</precio>
+    <procedencia>Quito</procedencia>
+    <caracteristicas>&planta;&nornamental;</caracteristicas>
+  </planta>
+</catalogo>
