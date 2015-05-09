@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE inventarioMusica [
+  <!ENTITY nombre "Nombre: Andres Piedra">
+  <!ENTITY materia "Catedra: Aquitectura Oientada a Servicios">
+  <!ENTITY establecimiento "Establecimiento: EPN">
+]>
+<inventarioMusica>
+  <disco>
+    <codigo>001</codigo>
+    <nombreArtista>Amelia Vega</nombreArtista>
+    <genero>Rock</genero>
+    <anio>2015</anio>
+    <valor>23.50</valor>
+    <reservapara>&nombre;&materia;&establecimiento;</reservapara>
+  </disco>
+  <disco>
+    <codigo>002</codigo>
+    <nombreArtista>Andres Fernadez</nombreArtista>
+    <genero>Rock-Pop</genero>
+    <anio>2013</anio>
+    <valor>24.50</valor>
+    <reservapara>&nombre;&materia;&establecimiento;</reservapara>
+  </disco>
+  <disco>
+    <codigo>003</codigo>
+    <nombreArtista>Alejandro Sanz</nombreArtista>
+    <genero>Pop</genero>
+    <anio>2015</anio>
+    <valor>26.50</valor>
+    <reservapara>&nombre;&materia;&establecimiento;</reservapara>
+
+  </disco>
+</inventarioMusica>
