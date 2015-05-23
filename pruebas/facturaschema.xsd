@@ -1,0 +1,94 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://ns.soa.com/soafactura/factura"
+  xmlns:facns="http://ns.soa.com/soafactura/factura"
+  elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:documentation>
+      Esquema para Factura.
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:element name="factura" type="facns:facturatype"/>
+  
+  <xsd:simpleType name="tipoID">
+    <xsd:restriction base="xsd:positiveInteger">
+      <xsd:pattern value="[0-9][0-9][0-9][0-9]"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType name="formadepago">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="efectivo|tarjeta|cheque"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="monedas">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="dolar" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+
+  <xsd:complexType name="facturatype">
+    <xsd:sequence>
+      <xsd:element name="datos_empresa" type="facns:datos_empresatype"/>
+      <xsd:element name="datos_cliente" type="facns:datos_clientetype"/>
+      <xsd:element name="datos_factura" type="facns:datos_facturatype"/>
+    </xsd:sequence>
+    <xsd:attribute name="n_fac"  type="facns:tipoID" /> 
+  </xsd:complexType>
+
+
+
+
+<!--Datos Empresa-->
+  
+  <xsd:complexType name="datos_empresatype">
+    <xsd:sequence>
+      <xsd:element name="nombre" type="xsd:string"/>
+      <xsd:element name="dir" type="xsd:string"/>
+      <xsd:element name="ciudad" type="xsd:string"/>
+      <xsd:element name="provincia" type="xsd:string"/>
+      <xsd:element name="telefono" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  
+  
+  <xsd:complexType name="datos_clientetype">
+    <xsd:sequence>
+      <xsd:element name="nombre" type="xsd:string"/>
+      <xsd:element name="div_env" type="xsd:string"/>
+      <xsd:element name="ciudad" type="xsd:string">
+        <xsd:attribute name="cod_postal"  type="xsd:string" />
+      </xsd:element>
+      <xsd:element name="provincia" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="n_cli"  type="facns:tipoID" />
+  </xsd:complexType>
+
+  
+  
+  <xsd:complexType name="datos_facturatype">
+    <xsd:sequence>
+      <xsd:element name="fecha" type="xsd:date" />
+      <xsd:element name="subtotal" type="xsd:double" />
+      <xsd:element name="valor_iva" type="xsd:double" />
+      <xsd:element name="total" type="xsd:double"/>
+    </xsd:sequence>
+    <xsd:attribute name="n_ped"  type="facns:tipoID" />
+    <xsd:attribute name="f_pago"  type="facns:formadepago" />
+    <xsd:attribute name="modena"  type="facns:modenas" />
+  </xsd:complexType>
+
+
+
+
+ 
+  
+  
+  
+  
+  
+</xsd:schema>
