@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://ns.soacookbook.com/venetian"
+           xmlns:tns="http://ns.soacookbook.com/venetian"
+             elementFormDefault="unqualified"
+           attributeFormDefault="unqualified"
+           >
+  <xs:annotation>
+    <xs:documentation>
+      OrderShip como  Garden of Eden
+    </xs:documentation>
+  </xs:annotation>
+
+
+  <xs:element name="shiporder" type="tns:shipordertype"/>
+  <xs:complexType name="shipordertype" >
+    <xs:sequence>
+      <xs:element  ref="tns:orderperson" />
+      <xs:element  ref="tns:shipto" maxOccurs="1" />
+      <xs:element  ref="tns:item" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="orderid" type="xs:string" use="required"/>
+  </xs:complexType>
+  
+  
+
+
+  <xs:element name="orderperson" type="xs:string"/>
+
+  <xs:element name="item"  >
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:title"/>
+        <xs:element ref="tns:note" minOccurs="0"/>
+        <xs:element ref="tns:quantity" />
+        <xs:element ref="tns:price" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="shipto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:name"/>
+        <xs:element ref="tns:address"/>
+        <xs:element ref="tns:city"/>
+        <xs:element ref="tns:country"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="address" type="xs:string"/>
+  <xs:element name="city" type="xs:string"/>
+  <xs:element name="country" type="xs:string"/>
+  
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="note" type="xs:string" />
+  <xs:element name="quantity" type="xs:positiveInteger"/>
+  <xs:element name="price" type="xs:decimal"/>
+  
+
+</xs:schema>
