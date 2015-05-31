@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Poblacion  xmlns:p="http://www.w3.org/TR/person"
+            xmlns:schemaLocation="http://www.w3.org/TR/person ejercicio2.xsd">
+
+  <persona>
+    <nombre>Juan Perez</nombre>
+    <nacimiento>
+      <dia>3</dia>
+      <mes>Mayo</mes>
+      <anio>1986</anio>
+    </nacimiento>
+    <direccion>
+      <calle>12 de Octubre y Generel Foch</calle>
+      <ciudad>Quito</ciudad>
+      <provincia>Pichincha</provincia>
+      <pais>Ecuador</pais>
+    </direccion>
+  </persona>
+  <persona>
+    <nombre>María López</nombre>
+    <nacimiento>
+      <dia>3</dia>
+      <mes>Mayo</mes>
+      <anio>1986</anio>
+    </nacimiento>
+    <direccion>
+      <calle>Tamayo n12 y Francisco Salazar</calle>
+      <ciudad>Quito</ciudad>
+      <provincia>Pichincha</provincia>
+      <pais>Ecuador</pais>
+    </direccion>
+    <direccion>
+      <calle>Pichincha 605 entre Clemente Ballén y 10 de Agosto,</calle>
+      <ciudad>Guayaquil</ciudad>
+      <provincia>Guayas</provincia>
+      <pais>Ecuador</pais>
+    </direccion>
+  </persona>
+</Poblacion>

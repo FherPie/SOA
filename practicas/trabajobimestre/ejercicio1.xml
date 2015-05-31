@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Libreria  xmlns:l="http://www.w3.org/TR/library"
+>
+  <l:libro>
+    <l:titulo>Cien años de soledad</l:titulo>
+    <l:autor>Gabriel García Márquez</l:autor>
+    <l:area>Nóvela</l:area>
+    <l:editorial>Editorial 1</l:editorial>
+    <l:precio>10.00</l:precio>
+    <l:anopublicacion>1960</l:anopublicacion>
+  </l:libro>
+
+  <l:libro>
+    <l:titulo>El señor de los anillos</l:titulo>
+    <l:autor>J. R. R. Tolkien</l:autor>
+    <l:area>Fantasía</l:area>
+    <l:editorial>Editorial 2</l:editorial>
+    <l:precio>15.46</l:precio>
+    <l:anopublicacion>2001</l:anopublicacion>
+  </l:libro>
+
+
+  <l:libro>
+    <l:titulo>SOA Simple</l:titulo>
+    <l:autor>Lonneke Dikmans</l:autor>
+    <l:area>Técnica</l:area>
+    <l:editorial>Editorial 3</l:editorial>
+    <l:precio>45.78</l:precio>
+    <l:anopublicacion>2015</l:anopublicacion>
+  </l:libro>
+
+
+
+  <l:libro>
+    <l:titulo>Nacho Lee</l:titulo>
+    <l:autor>Nacho</l:autor>
+    <l:area>Lectura</l:area>
+    <l:editorial>Editorial 2</l:editorial>
+    <l:precio>11.23</l:precio>
+    <l:anopublicacion>1986</l:anopublicacion>
+  </l:libro>
+
+
+  <l:libro>
+    <l:titulo>22/11/1963</l:titulo>
+    <l:autor>Stephen King</l:autor>
+    <l:area>Novela</l:area>
+    <l:editorial>Editorial 4</l:editorial>
+    <l:precio>5.63</l:precio>
+    <l:anopublicacion>2009</l:anopublicacion>
+  </l:libro>
+
+
+  <l:libro>
+    <l:titulo>Hamlet</l:titulo>
+    <l:autor>William Shakespeare</l:autor>
+    <l:area>Novela</l:area>
+    <l:editorial>Editorial 1</l:editorial>
+    <l:precio>23.51</l:precio>
+    <l:anopublicacion>1920</l:anopublicacion>
+  </l:libro>
+
+</Libreria>

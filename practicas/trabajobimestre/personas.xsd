@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://personas.com"
+    elementFormDefault="qualified"
+    xmlns="http://personas.com"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="datos" >
+    <xs:complexType >
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="apellidos" type="xs:string"/>
+         <xs:element name="cedula" type="xs:integer"/>
+      </xs:sequence>
+    <xs:attribute name="nacimiento" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="persona" >
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="datos"/>
+        <xs:element name="comentario"  type="xs:string"/>  
+      </xs:sequence>
+    <xs:attribute name="nacimiento" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
