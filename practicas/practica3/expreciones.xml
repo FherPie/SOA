@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <expresiones>
   <Ejercicio>
@@ -38,3 +39,46 @@
   </Ejercicio>
 </expresiones>
 
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<expresiones>
+  <Ejercicio>
+  <ejercicioUno>QW</ejercicioUno>
+  <ejercicioUno>122333-.</ejercicioUno>
+  </Ejercicio>
+  <Ejercicio>
+    <ejercicioDos>(999)9995555</ejercicioDos>
+    <ejercicioDos>(999)-.999-5555</ejercicioDos>
+  </Ejercicio>
+  <Ejercicio>
+    <ejercicioTres>9.Aa@A.ABFFDFD</ejercicioTres>
+    <ejercicioTres>9Aa@A11111.S</ejercicioTres>
+  </Ejercicio>
+  <Ejercicio>
+    <ejercicioCuatro>12345</ejercicioCuatro>
+    <ejercicioCuatro>12345-77779</ejercicioCuatro>
+  </Ejercicio>
+
+  <Ejercicio>
+    <ejercicioCinco>790-07-7778</ejercicioCinco>
+      <ejercicioCinco>79007777</ejercicioCinco>
+  </Ejercicio>
+  
+  <Ejercicio>
+    <ejercicioSeis>AB</ejercicioSeis>
+    <ejercicioSeis>79</ejercicioSeis>
+  </Ejercicio>
+
+  <Ejercicio>
+    <ejercicioSiete>https://www.-sass.as</ejercicioSiete>
+    <ejercicioSiete>79</ejercicioSiete>
+  </Ejercicio>
+
+  <Ejercicio>
+    <ejercicioOcho>https://www.-sass.as</ejercicioOcho>
+    <ejercicioOcho>79</ejercicioOcho>
+  </Ejercicio>
+  
+</expresiones>
+
+>>>>>>> origin/master

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:annotation>
+    <xs:documentation>
+     Persona
+    </xs:documentation>
+  </xs:annotation>
+  
+  <xs:element name="persona" type="mstns:PersonType"/>
+
+  <xs:simpleType name="tipoNombre">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoAnio">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1900"/>s
+      <xs:maxInclusive value="2015"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoDia">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="31"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="tipoMes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Enero"/>
+      <xs:enumeration value="Febrero"/>
+      <xs:enumeration value="Marzo"/>
+      <xs:enumeration value="Abril"/>
+      <xs:enumeration value="Mayo"/>
+      <xs:enumeration value="Junio"/>
+      <xs:enumeration value="Julio"/>
+      <xs:enumeration value="Agosto"/>
+      <xs:enumeration value="Septiembre"/>
+      <xs:enumeration value="Octubre"/>
+      <xs:enumeration value="Noviembre"/>
+      <xs:enumeration value="Diciembre"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Sexo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="hombre|mujer"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="nacimiento"  >
+    <xs:attribute name="anio" type="xs:tipoAnio" />
+    <xs:attribute name="mes" type="xs:tipoMes" />
+    <xs:attribute name="sexo" type="xs:Sexo" />
+  </xs:complexType>
+
+  <xs:complexType name="direccion"  >
+    <xs:sequence>
+      <xs:element name="calle" type="xs:tipoNombre"   />
+      <xs:element name="ciudad" type="xs:tipoNombre"   />
+      <xs:element name="provincia" type="xs:tipoNombre"   />
+      <xs:element name="pais" type="xs:tipoNombre"   />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="PersonType">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:tipoNombre"   />
+      <xs:element name="direccion" type="xs:direccion" minOccurs="1" />
+      <xs:element name="nacimiento"   type="xs:nacimiento" />
+      <xs:element name="sexo"   type="xs:Sexo" />
+      
+    </xs:sequence>
+  </xs:complexType>
+  
+  
+  
+  
+  
+  
+
+</xs:schema>
